@@ -2,61 +2,65 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(isLeapYear(1800));
-        System.out.println(areEqualByThreeDecimalPlaces(-3.1756, -3.175));
-        System.out.println(areEqualByThreeDecimalPlaces(-3.123, 3.123));
-        System.out.println(hasTeen(9, 99, 19));
-        System.out.println(hasTeen(22, 23, 34));
-        printYearsAndDays(525600);
-        printYearsAndDays(561600);
-        System.out.println(getDaysInMonth(1, 2020));
-        System.out.println(getDaysInMonth(2, 2020));
-        System.out.println(getDaysInMonth(2, 2018));
-        System.out.println(getDaysInMonth(-1, 2020));
-        System.out.println(getDaysInMonth(1, -2020));
-        System.out.println(sumOdd(1, 100));
-        System.out.println(isPalindrome(121));
-        System.out.println(isPalindrome(2345432));
-        System.out.println(sumFirstAndLastDigit(-5));
-        System.out.println(sumFirstAndLastDigit(10));
-        System.out.println(getEvenDigitSum(123456789));
-        System.out.println(getEvenDigitSum(2000));
-        System.out.println(hasSharedDigit(12, 23));
-        System.out.println(hasSharedDigit(9, 99));
-        System.out.println(hasSharedDigit(15, 55));
-        System.out.println(hasSharedDigit(10, 34));
-        System.out.println(hasSharedDigit(100, 10));
-        System.out.println(hasSharedDigit(12, 13));
-        System.out.println(hasSameLastDigit (41, 22, 71));
-        System.out.println(hasSameLastDigit (23, 32, 42));
-        System.out.println(hasSameLastDigit (9, 99, 999));
-        printFactors(6);
-        printFactors(32);
-        printFactors(10);
-        printFactors(-1);
-        System.out.println(getGreatestCommonDivisor(25, 15));
-        System.out.println(getGreatestCommonDivisor(12, 30));
-        System.out.println(getGreatestCommonDivisor(9, 18));
-        System.out.println(getGreatestCommonDivisor(81, 153));
-        numberToWords(1234);
-        System.out.println();
-        numberToWords(-1234);
-        System.out.println();
-        numberToWords(100);
-        System.out.println(canPack (1, 0, 4)); //false
-        System.out.println(canPack (1, 0, 5)); //true
-        System.out.println(canPack (0, 5, 4)); //true
-        System.out.println(canPack (2, 2, 11)); //true
-        System.out.println(canPack (-3, 2, 12)); //false
-        System.out.println(getLargestPrime (21));
-        System.out.println(getLargestPrime (217));
-        System.out.println(getLargestPrime (0));
-        System.out.println(getLargestPrime (45));
-        System.out.println(getLargestPrime (-1));
-        System.out.println(getLargestPrime (7));
-        System.out.println(getLargestPrime (16));
-        printSquareStar(8);
-        inputThenPrintSumAndAverage();
+//        System.out.println(isLeapYear(1800));
+//        System.out.println(areEqualByThreeDecimalPlaces(-3.1756, -3.175));
+//        System.out.println(areEqualByThreeDecimalPlaces(-3.123, 3.123));
+//        System.out.println(hasTeen(9, 99, 19));
+//        System.out.println(hasTeen(22, 23, 34));
+//        printYearsAndDays(525600);
+//        printYearsAndDays(561600);
+//        System.out.println(getDaysInMonth(1, 2020));
+//        System.out.println(getDaysInMonth(2, 2020));
+//        System.out.println(getDaysInMonth(2, 2018));
+//        System.out.println(getDaysInMonth(-1, 2020));
+//        System.out.println(getDaysInMonth(1, -2020));
+//        System.out.println(sumOdd(1, 100));
+//        System.out.println(isPalindrome(121));
+//        System.out.println(isPalindrome(2345432));
+//        System.out.println(sumFirstAndLastDigit(-5));
+//        System.out.println(sumFirstAndLastDigit(10));
+//        System.out.println(getEvenDigitSum(123456789));
+//        System.out.println(getEvenDigitSum(2000));
+//        System.out.println(hasSharedDigit(12, 23));
+//        System.out.println(hasSharedDigit(9, 99));
+//        System.out.println(hasSharedDigit(15, 55));
+//        System.out.println(hasSharedDigit(10, 34));
+//        System.out.println(hasSharedDigit(100, 10));
+//        System.out.println(hasSharedDigit(12, 13));
+//        System.out.println(hasSameLastDigit (41, 22, 71));
+//        System.out.println(hasSameLastDigit (23, 32, 42));
+//        System.out.println(hasSameLastDigit (9, 99, 999));
+//        printFactors(6);
+//        printFactors(32);
+//        printFactors(10);
+//        printFactors(-1);
+//        System.out.println(getGreatestCommonDivisor(25, 15));
+//        System.out.println(getGreatestCommonDivisor(12, 30));
+//        System.out.println(getGreatestCommonDivisor(9, 18));
+//        System.out.println(getGreatestCommonDivisor(81, 153));
+//        numberToWords(1234);
+//        System.out.println();
+//        numberToWords(-1234);
+//        System.out.println();
+//        numberToWords(100);
+//        System.out.println(canPack (1, 0, 4)); //false
+//        System.out.println(canPack (1, 0, 5)); //true
+//        System.out.println(canPack (0, 5, 4)); //true
+//        System.out.println(canPack (2, 2, 11)); //true
+//        System.out.println(canPack (-3, 2, 12)); //false
+//        System.out.println(getLargestPrime (21));
+//        System.out.println(getLargestPrime (217));
+//        System.out.println(getLargestPrime (0));
+//        System.out.println(getLargestPrime (45));
+//        System.out.println(getLargestPrime (-1));
+//        System.out.println(getLargestPrime (7));
+//        System.out.println(getLargestPrime (16));
+//        printSquareStar(8);
+//        inputThenPrintSumAndAverage();
+        System.out.println(getBucketCount(-3.4, 2.1, 1.5, 2));
+        System.out.println(getBucketCount(3.4, 2.1, 1.5, 2));
+        System.out.println(getBucketCount(2.75, 3.25, 2.5, 1));
+
     }
 
 
@@ -487,5 +491,49 @@ public class Main {
         }
         avg = (int)Math.round((double)((double)sum / (double)count));
         System.out.println("SUM = " + sum + " AVG = " + avg);
+    }
+    public static int getBucketCount(double width, double height, double areaPerBucket, int extraBuckets){
+        if((width <= 0) || (height <= 0) || (areaPerBucket <= 0) || (extraBuckets < 0)){
+            return -1;
+        }
+        if((width * height) <= (extraBuckets * areaPerBucket)){
+            return 0;
+        } else {
+            double totalArea = width * height;
+            double requiredArea = totalArea - (extraBuckets * areaPerBucket);
+
+            double numBuckets = Math.ceil(requiredArea / areaPerBucket);
+            return (int)numBuckets;
+        }
+    }
+    public static int getBucketCount(double width, double height, double areaPerBucket){
+        if((width < 0) || (height < 0) || (areaPerBucket < 0)){
+            return -1;
+        }
+        int extraBuckets = 0;
+        if((width * height) <= (extraBuckets * areaPerBucket)){
+            return 0;
+        } else {
+            double totalArea = width * height;
+            double requiredArea = totalArea - (extraBuckets * areaPerBucket);
+
+            double numBuckets = Math.ceil(requiredArea / areaPerBucket);
+            return (int)numBuckets;
+        }
+    }
+    public static int getBucketCount(double area, double areaPerBucket){
+        if((area <= 0) || (areaPerBucket < 0)){
+            return -1;
+        }
+        int extraBuckets = 0;
+        if((area) <= (extraBuckets * areaPerBucket)){
+            return 0;
+        } else {
+            double totalArea = area;
+            double requiredArea = totalArea - (extraBuckets * areaPerBucket);
+
+            double numBuckets = Math.ceil(requiredArea / areaPerBucket);
+            return (int)numBuckets;
+        }
     }
 }
