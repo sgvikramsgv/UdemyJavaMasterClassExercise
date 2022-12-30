@@ -69,9 +69,9 @@ public class Main {
 //        System.out.println(getLargestPrime (16));
 //        printSquareStar(8);
 //        inputThenPrintSumAndAverage();
-//        System.out.println(getBucketCount(-3.4, 2.1, 1.5, 2));
-//        System.out.println(getBucketCount(3.4, 2.1, 1.5, 2));
-//        System.out.println(getBucketCount(2.75, 3.25, 2.5, 1));
+        System.out.println(getBucketCount(-3.4, 2.1, 1.5, 2));
+        System.out.println(getBucketCount(3.4, 2.1, 1.5, 2));
+        System.out.println(getBucketCount(2.75, 3.25, 2.5, 1));
 
     }
 

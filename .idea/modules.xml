@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/BasicJava/BasicJava.iml" filepath="$PROJECT_DIR$/BasicJava/BasicJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Person/Person.iml" filepath="$PROJECT_DIR$/Person/Person.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SimpleCalculator/SimpleCalculator.iml" filepath="$PROJECT_DIR$/SimpleCalculator/SimpleCalculator.iml" />
       <module fileurl="file://$PROJECT_DIR$/UdemyJavaMasterClassExercise.iml" filepath="$PROJECT_DIR$/UdemyJavaMasterClassExercise.iml" />
     </modules>
   </component>
