@@ -2,6 +2,18 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+//        System.out.println("------------CheckNumber------------");
+//        checkNumber(10);
+//        System.out.println("------------printConversion------------");
+//        printConversion(-10.0);
+//        System.out.println("------------printMegaBytesAndKiloBytes------------");
+//        printMegaBytesAndKiloBytes(0);
+//        System.out.println(shouldWakeUp(true, 1));
+//        System.out.println(shouldWakeUp(false, 2));
+//        System.out.println(shouldWakeUp(true, 8));
+//        System.out.println(shouldWakeUp(true, -1));
+//        System.out.println("------------isLeapYear------------");
+//        System.out.println(isLeapYear(1800));
 //        System.out.println(isLeapYear(1800));
 //        System.out.println(areEqualByThreeDecimalPlaces(-3.1756, -3.175));
 //        System.out.println(areEqualByThreeDecimalPlaces(-3.123, 3.123));
@@ -57,12 +69,58 @@ public class Main {
 //        System.out.println(getLargestPrime (16));
 //        printSquareStar(8);
 //        inputThenPrintSumAndAverage();
-        System.out.println(getBucketCount(-3.4, 2.1, 1.5, 2));
-        System.out.println(getBucketCount(3.4, 2.1, 1.5, 2));
-        System.out.println(getBucketCount(2.75, 3.25, 2.5, 1));
+//        System.out.println(getBucketCount(-3.4, 2.1, 1.5, 2));
+//        System.out.println(getBucketCount(3.4, 2.1, 1.5, 2));
+//        System.out.println(getBucketCount(2.75, 3.25, 2.5, 1));
 
     }
 
+    public static void checkNumber(int number){
+        if(number > 0){
+            System.out.println("positive");
+        }
+        if(number < 0){
+            System.out.println("negative");
+        }
+        if(number == 0){
+            System.out.println("zero");
+        }
+    }
+    public static void printConversion(double kilometersPerHour){
+        long result = toMilesPerHour(kilometersPerHour);
+        if (result < 0){
+            System.out.println("Invalid Value");
+        } else {
+            System.out.println(kilometersPerHour + " km/h = " + result + " mi/h");
+        }
+    }
+    public static long toMilesPerHour(double kilometersPerHour) {
+        if(kilometersPerHour == 0.0){
+            return 0;
+        } else if(kilometersPerHour < 0) {
+            return -1;
+        }
+        return Math.round((kilometersPerHour / 1.609));
+    }
+    public static void printMegaBytesAndKiloBytes(int kiloBytes){
+        if(kiloBytes < 0){
+            System.out.println("Invalid Value");
+        } else {
+            int oneKb = 1024;
+            int mbValue = kiloBytes / oneKb;
+            int kbValue = (kiloBytes % oneKb);
+            System.out.println(kiloBytes + " KB = " + mbValue + " MB and " + kbValue + " KB");
+        }
+    }
+    public static boolean shouldWakeUp(boolean barking, int hourOfDay){
+        if(barking){
+            if(((hourOfDay < 8) || (hourOfDay > 22)) && ((hourOfDay >= 0) && (hourOfDay <= 23))){
+                return true;
+            }
+        }
+
+        return false;
+    }
 
     public static boolean isLeapYear(int year){
         if((year >= 1) && (year <= 9999)){
